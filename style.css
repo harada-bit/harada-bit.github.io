@@ -186,11 +186,13 @@ footer{
 
 }
 .img_inner p{
-    width: 70%;
+    width: 60%;
 }
 .profile_img{
     display: block;
-    margin: 15px 0 0 20px;
+    padding:  15px 0 0 20px;
+    box-sizing: border-box;
+    /* margin: 15px 0 0 20px; */
     width: 40%;
     height: 100%;
 }
@@ -390,7 +392,7 @@ textarea{
     font-weight: bold;
 }
 .img_inner p{
-    width: 70%;
+    width: 60%;
 }
 .workR ul{
     padding: 0 20px;
@@ -459,7 +461,9 @@ textarea{
     /* ヘッダー */
     header{
         display: block;
-        width: 100%;
+        width: 480px;
+        box-sizing: border-box;
+        padding: 20px;
         height: 90px;
     }
     header h1{
@@ -480,19 +484,19 @@ textarea{
     }
     .profileL{
         width: 100%;
-        height: 500px;
+        height: 450px;
         margin-bottom: 15px;
     }
     .profileR{
         width: 100%;
-        height: 650px;
+        height: auto;
         margin-bottom: 15px;
     }
     .name{
         font-size: 25px;
     }
     .profileR ul{
-        padding-top: 10px;
+        padding: 10px;
     }
 
 
@@ -503,27 +507,34 @@ textarea{
     }
     .skills_inner div{
         width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        height: auto;
         margin-bottom: 15px;
     }
 
 
     /* works */
     .works_inner{
-        height: 660px;
+        height: auto;
         display: block;
 
     }
     .works_div{
         width: 100%;
-        height: 210px;
+        height: auto;
         margin-bottom: 15px;
+    }
+    .works_div p:last-of-type{
+        padding-bottom: 10px;
     }
 
     /* contact */
     .contact_inner{
         width: 100%;
-        height: 700px;
+        height: auto;
         margin: auto;
+        padding-bottom: 20px;
     }
     .table-list{
         display: flex;
@@ -545,6 +556,7 @@ textarea{
     .table-list:not(:last-of-type){
         margin-bottom: 10px;
     }
+    
 
     /* profile */
     .work_inner{
@@ -553,12 +565,15 @@ textarea{
     .workL{
         padding-top: 10px;
         width: 100%;
-        height: 550px;
+        height: auto;
         margin-bottom: 15px;
+    }
+    .workL p:last-of-type{
+        padding-bottom: 10px;
     }
     .workR{
         width: 100%;
-        height: 350px;
+        height: auto;
         margin-bottom: 15px;
     }
     .name{
