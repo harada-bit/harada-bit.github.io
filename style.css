@@ -1,0 +1,572 @@
+ul,
+li {
+  list-style: none;
+}
+.mg_t80{
+    margin-top: 80px;
+}
+.mg_t160{
+    margin-top: 160px;
+}
+.h2_center{
+    text-align: center;
+}
+.inner{
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    transition: opacity .3s;
+    text-decoration: none;
+    color: black;
+  }
+.border-div{
+    border: 1px solid #aaa5a5;
+}
+.bod-rad10{
+    border-radius: 10px;
+}
+/* .mg_t40:nth-of-type(even){
+    background-color: #f7f7f7;
+} */
+
+/*--------------------------------
+ レイアウト
+---------------------------------*/
+html{
+    width: 100%;
+}
+
+
+body{
+    width: 100%;
+    box-sizing: border-box;
+    /* width: 1280px; */
+    margin: 0 auto;
+    background-color: #e6e0e0;
+}
+.main{
+    width: 100%;
+}
+.sub_main{
+    /* box-sizing: border-box; */
+    width: 1000px;
+    margin: 0 auto;
+}
+#profile{
+    display: block;
+    padding-top: 120px;
+    margin-top: -80px;
+}
+#skills{
+    display: block;
+    padding-top: 120px;
+    margin-top: -80px;
+}
+#works{
+    display: block;
+    padding-top: 120px;
+    margin-top: -80px;
+}
+#contact{
+    display: block;
+    padding-top: 120px;
+    margin-top: -80px;
+}
+#work{
+    display: block;
+    padding-top: 300px;
+    margin-top: -160px;
+}
+/*--------------------------------
+ 見出し
+---------------------------------*/
+
+
+/*--------------------------------
+ヘッダー
+---------------------------------*/
+.header_nav_list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.header_nav_list li{
+    padding-left: 30px;
+}
+.header_nav_list li:first-of-type{
+    padding-left: 0px;
+}
+.header_nav_list li a{
+    transition: .3s;
+    color: #333;
+}
+header{
+    position: fixed;
+    top: 0;
+    background: rgba(255,255,255,0.9);
+    /* width: 1280px; */
+    width: 100%;
+    box-sizing: border-box;
+    height: 130px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*--------------------------------
+フッター
+---------------------------------*/
+footer{
+    width: 100%;
+    margin-top: 40px;
+    height: 130px;
+    background-color: rgb(192, 188, 188);
+}
+
+
+
+/*--------------------------------
+ メインビジュアル
+---------------------------------*/
+.main_visual{
+    width: 100%;
+    height: 670px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: azure;
+}
+.mv_title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    letter-spacing: .1em;
+  }
+.mv_subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 40px;
+    letter-spacing: .08em;
+}
+.main-visual-inner {
+    padding: 0 40px;
+}
+
+
+/*--------------------------------
+ profile
+---------------------------------*/
+
+.profile_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.profileL,.profileR{
+    width: 48%;
+    height: 450px;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+.img_inner{
+    width: 100%;
+    height: 40%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.name{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.img_inner p{
+    width: 70%;
+}
+.profile_img{
+    display: block;
+    margin: 15px 0 0 20px;
+    width: 40%;
+    height: 100%;
+}
+.profileR ul{
+    padding: 0 20px;
+}
+.profileL ul{
+    padding: 0 20px;
+    margin: 0;
+}
+.profile_list{
+    border-bottom: solid #aaa5a5;
+    font-weight: bold;
+    font-size: large;
+}
+.profileL ul p{
+    font-size: small;
+}
+
+
+/*--------------------------------
+ SKILLS
+---------------------------------*/
+.skills_inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills_inner div{
+    width: 32%;
+    height: 313px;
+    background-color: #ffff;
+    border-radius: 10px;
+
+}
+.skills_inner div:nth-of-type(4n){
+    margin-top: 20px;
+}
+
+.skills_inner div p,span{
+    text-align: center;
+}
+.skills_inner div p:first-of-type{
+    font-size: large;
+    font-weight: bold;
+}
+
+.icon_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+
+
+/*--------------------------------
+ WORKS
+---------------------------------*/
+.works_inner{
+    display: flex;
+    /* justify-content: space-between; */
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    /* height: 450px; div２段 */
+     height: 198px;　/*div1段 */
+}
+.works_div{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+.works_inner a:not(:nth-of-type(3n)){
+    margin-right: 20px;
+}
+.works_div p{
+    text-align: center;
+}
+.works_title{
+    font-weight: bold;
+    font-size: large;
+    margin: 30px auto;
+}
+.works_description{
+    font-size: small;
+    width: 80%;
+    margin: auto;
+}
+.works_inner a:hover{/* マウスオーバー時に色変更*/
+    opacity: 0.5;
+    background-color: #000000;
+}
+.works_inner a {
+    /* display: block; */
+    width: 32%;
+    height: 198px;
+}
+
+/*--------------------------------
+ CONTACT
+---------------------------------*/
+.contact_inner{
+    width: 600px;
+    height: 700px;
+    margin: auto;
+    background-color: #ffff;
+    border-radius: 10px;
+
+}
+.contact-message {
+    text-align: center;
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+table{
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.essential{
+    color: red;
+}
+.table-list {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.05em;
+    width: 80%;
+    margin: 0 auto;
+}
+.table-list:not(:last-of-type){
+    margin-bottom: 40px;
+}
+.table-list:last-of-type{
+    height: 80px;
+}
+/* .table-list:not(:first-of-type){
+    border-top: solid gray;
+
+} */
+
+
+.table-list th {
+    font-size: 13px;
+    font-weight: bold;
+    width: 30%;
+    text-align: left;
+    padding-left: 10px;
+}
+.table-list td{
+    width: 70%;
+    height: 40px;
+    box-sizing: border-box;
+}
+.table-list:last-of-type td{
+    width: 70%;
+    height: 80px;
+    box-sizing: border-box;
+}
+input:not([type="submit"]){
+    width: 100%;
+    height: 20px;
+}
+textarea{
+    width: 100%;
+    height: 100%;
+}
+.submit-button{
+    display: block;
+    margin: 40px auto 0 auto;
+}
+
+
+/*WORK
+----------------------------------------------------*/
+
+.work_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.workL,.workR{
+    width: 48%;
+    height: 450px;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+.name{
+    font-size: 30px;
+    font-weight: bold;
+}
+.img_inner p{
+    width: 70%;
+}
+.workR ul{
+    padding: 0 20px;
+}
+.workL ul{
+    padding: 0 20px;
+}
+.work_list{
+    border-bottom: solid #aaa5a5;
+    font-weight: bold;
+    /* font-size: large; */
+}
+.code_link_img{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+.profile .code_link_img:hover{/* マウスオーバー時に色変更*/
+    opacity: 0.8;
+}
+.profile a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: underline;
+
+}
+.workL ul p{
+    font-size: small;
+}
+
+
+
+/*media Queries 767
+----------------------------------------------------*/
+@media screen and (max-width: 1000px) {
+    html{
+        width: 1000px;
+    }
+
+
+
+
+
+
+/*media Queries 767
+----------------------------------------------------*/
+@media screen and (max-width: 480px) {
+    /* 見出し */
+
+    /* レイアウト */
+    html{
+        width: 480px;
+    }
+    body{
+        box-sizing: border-box;
+        width: 480px;
+        margin: 0 auto;
+    }
+    .sub_main{
+        box-sizing: border-box;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    /* ヘッダー */
+    header{
+        display: block;
+        width: 100%;
+        height: 90px;
+    }
+    header h1{
+        font-size: 10px;
+        margin: 0;
+    }
+    .header_nav_list{
+        padding: 0;
+    }
+    .header_nav_list li:first-of-type{
+        padding-left: 0;
+    }
+    /*  メインビジュアル */
+
+    /* profile */
+    .profile_inner{
+        display: block;
+    }
+    .profileL{
+        width: 100%;
+        height: 500px;
+        margin-bottom: 15px;
+    }
+    .profileR{
+        width: 100%;
+        height: 650px;
+        margin-bottom: 15px;
+    }
+    .name{
+        font-size: 25px;
+    }
+    .profileR ul{
+        padding-top: 10px;
+    }
+
+
+
+    /* skills */
+    .skills_inner{
+        display: block;
+    }
+    .skills_inner div{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+    /* works */
+    .works_inner{
+        height: 660px;
+        display: block;
+
+    }
+    .works_div{
+        width: 100%;
+        height: 210px;
+        margin-bottom: 15px;
+    }
+
+    /* contact */
+    .contact_inner{
+        width: 100%;
+        height: 700px;
+        margin: auto;
+    }
+    .table-list{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .table-list td{
+        width: 100%;
+    }
+    .table-list:last-of-type td{
+        width: 100%;
+        height: 80px;
+        box-sizing: border-box;
+    }
+    .table-list th {
+        width: 100%;
+        padding-left: 0;
+    }
+    .table-list:not(:last-of-type){
+        margin-bottom: 10px;
+    }
+
+    /* profile */
+    .work_inner{
+        display: block;
+    }
+    .workL{
+        padding-top: 10px;
+        width: 100%;
+        height: 550px;
+        margin-bottom: 15px;
+    }
+    .workR{
+        width: 100%;
+        height: 350px;
+        margin-bottom: 15px;
+    }
+    .name{
+        font-size: 25px;
+    }
+    .workR ul{
+        padding-top: 10px;
+    }
+
+    
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WORK-scraipe</title>
+    <link href="style.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+
+</head>
+<body>
+
+
+    <header>
+        <a href="#main"><h1>NAOYUKI HARADA</h1></a>
+        <nav>
+            <ul class="header_nav_list">
+                <li><a href="./index.html#profile">PROFILE</a></li>
+                <li><a href="./index.html#skills">SKILLS</a></li>
+                <li><a href="./index.html#works">WORKS</a></li>
+                <li><a href="./index.html#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="main" id="main">
+        <div class="sub_main">
+            <!-- WORK -->
+            <div class="work mg_t160" id="work">
+                <h2 class="h2_center">スクレイピング</h2>
+                <div class="work_inner">
+                    <div class="workL">
+                        <ul>
+                            <li class="work_list">アプリの概要</li>
+                            <p>言語：PYTHON<br>
+                                簡易的なスクレイピングアプリ。GUIで抽出条件、ファイルの設定オプションを指定し、ファイルを保存することができるアプリケーション。</p>
+                            <li class="work_list">このアプリを作ろうと思った訳</li>
+                            <p>
+                                過去にインターネット販売を行っており、当時商品の管理などのサービスに登録していたが、スクレイピングの知識はあったので私でもできるのではないかと思い、段階的に簡易的なスクレイピングツールを作成。
+                            </p>
+                            <li class="work_list">製作する際にこだわったポイント</li>
+                            <p>
+                                GUIで操作できるように工夫。またGUIの入力情報をスクレイピングとファイル書き込みのプログラムに渡して処理をさせるようにしました。
+                            </p>
+                            <li class="work_list">製作において苦労した点</li>
+                            <p>
+                                GUIのライブラリ（Tkinter）の使い方、GUIでの入力データを参照と引数でうまく渡せるように構造化したこと。
+                            </p>
+                        </ul>
+                    </div>
+                    <div class="workR">
+                        <ul class="profile">
+                            <li class="work_list">コード</li>
+                            <a clas="code_link" href="https://github.com/harada-bit/scraipeApp"><img src="./picture/soucecodeIMGL8988_TP_V.jpeg" alt="code-link_github" class="code_link_img">
+                            <p>⇑⇑コードは上記画像をクリックお願いします。</p></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+
+            <!-- WORKS -->
+            <div class="works mg_t80" id="works">
+                <h2 class="h2_center">WORKS</h2>
+                <div class="works_inner">
+                    <a href="./work_marubatu.html">
+                        <div class="works_div">
+                            <p class="works_title">マルバツゲーム</p>
+                            <p class="works_description">言語：JAVA<br>
+                                簡易的なマルバツゲーム。ゲームはターミナル上で実行するようにしています。</p>
+                        </div>
+                    </a>
+                    <a href="./work_scraipe.html">
+                        <div class="works_div">
+                            <p class="works_title">スクレイピング</p>
+                            <p class="works_description">言語：PYTHON<br>
+                                簡易的なスクレイピングアプリを作成。GUIで抽出条件、ファイルの設定オプションを指定し、ファイルを保存することができるアプリケーション。</p>
+                        </div>
+                    </a>
+                    <a href="./work_scraipeNews.html">
+                        <div class="works_div">
+                            <p class="works_title">ニュースサイトスクレイピング</p>
+                            <p class="works_description">言語：PYTHON<br>
+                                検索キーワードより、複数ニュースサイトから検索キーワードに関連する見出し、URLをリスト化し表示確認/ファイルの保存を行うアプリケーション。</p>
+                        </div>
+                    </a>
+                    <!-- <a href="">
+                        <div class="works_div">
+                            <p class="works_title">オセロゲーム</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="works_div">
+                            <p class="works_title">TODO/スケジュールwebアプリケーション</p>
+                            <p class="works_description"></p>
+                        </div>
+                    </a> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        
+
+    </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
